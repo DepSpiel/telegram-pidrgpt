@@ -15,7 +15,7 @@ logger = logging.getLogger(__name__)
 class PerplexityClient:
     def __init__(self, api_key: str):
         self.api_key = api_key
-        self.base_url = "https://api.perplexity.ai/search"
+        self.base_url = "https://api.perplexity.ai/chat/completions"
         self.headers = {
             "Authorization": f"Bearer {api_key}",
             "Content-Type": "application/json",
